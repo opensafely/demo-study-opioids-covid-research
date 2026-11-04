@@ -72,7 +72,7 @@ dataset.age_stand = case(
 dataset.sex = patients.sex
 
 # IMD decile
-imd = addresses.for_patient_on(index_date).imd_rounded
+imd = addresses.for_patient_on(index_date).imd_rounded_2019
 dataset.imd10 = case(
     when((imd >= 0) & (imd < int(32844 * 1 / 10))).then("1 (most deprived)"),
     when(imd < int(32844 * 2 / 10)).then("2"),
