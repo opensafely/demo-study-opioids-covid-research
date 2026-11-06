@@ -89,7 +89,7 @@ ethnicity6 = case(
     otherwise="Unknown",
 )
 
-msoa_code = addresses.for_patient_on(index_date).msoa_code
+msoa_code = addresses.for_patient_on(index_date).msoa_code_2011
 
 #########################
 

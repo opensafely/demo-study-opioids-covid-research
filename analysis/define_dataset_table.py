@@ -140,7 +140,7 @@ dataset.ethnicity6 = case(
 )
 
 # Address msoa code for region
-dataset.msoa_code = addresses.for_patient_on(index_date).msoa_code
+dataset.msoa_code = addresses.for_patient_on(index_date).msoa_code_2011
 
 # In care home based on primis codes
 carehome_primis = (
