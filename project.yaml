@@ -45,8 +45,8 @@ actions:
     run: ehrql:dev generate-measures analysis/measures_overall.py
       --output output/measures/measures_overall.csv
       --
-      --start-date "2000-01-01"
-      --intervals 54
+      --start-date "2003-04-01"
+      --intervals 3
     outputs:
       moderately_sensitive:
         measure_csv: output/measures/measures_overall.csv
@@ -56,8 +56,8 @@ actions:
     run: ehrql:dev generate-measures analysis/measures_demo_prev.py
       --output output/measures/measures_demo_prev_no_region.csv
       --
-      --start-date "2000-01-01"
-      --intervals 54
+      --start-date "2003-04-01"
+      --intervals 3
     outputs:
       highly_sensitive:
         measure_csv: output/measures/measures_demo_prev_no_region.csv
@@ -77,8 +77,8 @@ actions:
     run: ehrql:dev generate-measures analysis/measures_demo_new.py
       --output output/measures/measures_demo_new_no_region.csv
       --
-      --start-date "2000-01-01"
-      --intervals 54
+      --start-date "2003-04-01"
+      --intervals 3
     outputs:
       highly_sensitive:
         measure_csv: output/measures/measures_demo_new_no_region.csv
@@ -98,8 +98,8 @@ actions:
     run: ehrql:dev generate-measures analysis/measures_type.py
       --output output/measures/measures_type.csv
       --
-      --start-date "2000-01-01"
-      --intervals 54
+      --start-date "2003-04-01"
+      --intervals 3
     outputs:
       moderately_sensitive:
         measure_csv: output/measures/measures_type.csv
@@ -109,8 +109,8 @@ actions:
     run: ehrql:dev generate-measures analysis/measures_carehome.py
       --output output/measures/measures_carehome.csv
       --
-      --start-date "2000-01-01"
-      --intervals 54
+      --start-date "2003-04-01"
+      --intervals 3
     outputs:
       moderately_sensitive:
         measure_csv: output/measures/measures_carehome.csv
