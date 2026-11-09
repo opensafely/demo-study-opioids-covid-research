@@ -8,16 +8,12 @@
 #   University of Oxford, 2024
 #####################################################################
 
-from ehrql import months, INTERVAL, Measures
-from ehrql.tables.emisv2 import patients, practice_registrations
-
+##########
+from argparse import ArgumentParser
 
 from dataset_definition import make_dataset_opioids
-
-
-##########
-
-from argparse import ArgumentParser
+from ehrql import INTERVAL, Measures, months
+from ehrql.tables.emisv2 import patients, practice_registrations
 
 parser = ArgumentParser()
 parser.add_argument("--start-date", type=str)

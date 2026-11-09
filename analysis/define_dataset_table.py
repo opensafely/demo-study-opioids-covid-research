@@ -9,18 +9,17 @@
 #####################################################################
 
 
+from dataset_definition import make_dataset_opioids
+from dates import end_date, index_date
 from ehrql import case, when
 from ehrql.tables.emisv2 import (
-    patients,
     addresses,
-    practice_registrations,
     clinical_events,
+    patients,
+    practice_registrations,
 )
 
 import codelists
-
-from dataset_definition import make_dataset_opioids
-from dates import index_date, end_date
 
 dataset = make_dataset_opioids(index_date=index_date, end_date=end_date)
 

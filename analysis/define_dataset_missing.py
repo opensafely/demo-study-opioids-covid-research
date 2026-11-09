@@ -7,11 +7,9 @@
 #   University of Oxford, 2024
 #####################################################################
 
-from ehrql import Dataset
-
-from ehrql.tables.emisv2 import patients, practice_registrations
-
 from dates import index_date
+from ehrql import Dataset
+from ehrql.tables.emisv2 import patients, practice_registrations
 
 dataset = Dataset()
 

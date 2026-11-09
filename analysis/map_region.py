@@ -1,8 +1,8 @@
+import argparse
 import json
 import pathlib
-import pandas
-import argparse
 
+import pandas
 
 MEASURE_NUMERIC_COLUMNS = ["ratio", "numerator", "denominator"]
 
